@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "coins",
+  "info": {
+    "name": "coins"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "definitions": {
+      "type": "richtext",
+      "required": true
+    },
+    "symbol": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "symbol"
+    }
+  }
+}

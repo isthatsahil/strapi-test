@@ -11,6 +11,6 @@ module.exports = {
     const { slug } = ctx.params;
 
     const entity = await strapi.services.coins.findOne({ slug });
-    return sanitizeEntity(entity, { model: strapi.models.restaurant });
+    return sanitizeEntity(entity, { model: strapi.models.coins });
   },
 };

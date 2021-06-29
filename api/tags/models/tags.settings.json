@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tags",
+  "info": {
+    "name": "Tags",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tagname": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "blogtag": {
+      "via": "tags",
+      "collection": "blogs"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "tagname"
+    },
+    "cointag": {
+      "via": "tags",
+      "collection": "coins"
+    }
+  }
+}

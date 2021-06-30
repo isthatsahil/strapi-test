@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "blogs",
+  "collectionName": "articles",
   "info": {
-    "name": "Blogs",
+    "name": "Articles",
     "description": ""
   },
   "options": {

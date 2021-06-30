@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "youtubes",
+  "info": {
+    "name": "Youtube"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "embedd": {
+      "type": "text",
+      "unique": false,
+      "required": true
+    },
+    "tags": {
+      "collection": "tags",
+      "via": "youtubetags",
+      "dominant": true
+    }
+  }
+}

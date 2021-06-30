@@ -28,6 +28,10 @@
     "cointag": {
       "via": "tags",
       "collection": "coins"
+    },
+    "youtubetags": {
+      "via": "tags",
+      "collection": "youtube"
     }
   }
 }

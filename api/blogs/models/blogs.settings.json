@@ -44,6 +44,13 @@
       "via": "blogtag",
       "collection": "tags",
       "dominant": true
+    },
+    "identifier": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "identifier"
     }
   }
 }

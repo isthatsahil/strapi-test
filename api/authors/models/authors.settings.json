@@ -30,6 +30,10 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "articles": {
+      "via": "author",
+      "collection": "blogs"
     }
   }
 }

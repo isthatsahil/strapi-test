@@ -55,6 +55,19 @@
     "author": {
       "model": "authors",
       "via": "articles"
+    },
+    "isFeatured": {
+      "type": "boolean",
+      "default": false,
+      "required": false
+    },
+    "isTrending": {
+      "type": "boolean",
+      "default": false
+    },
+    "isRecommended": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

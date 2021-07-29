@@ -53,8 +53,8 @@
       "targetField": "identifier"
     },
     "author": {
-      "model": "authors",
-      "via": "articles"
+      "via": "articles",
+      "model": "authors"
     },
     "isFeatured": {
       "type": "boolean",

@@ -11,6 +11,6 @@ module.exports = {
     const { slug } = ctx.params;
 
     const entity = await strapi.services.authors.findOne({ slug });
-    return sanitizeEntity(entity, { model: strapi.authors.coins });
+    return sanitizeEntity(entity, { model: strapi.models.authors });
   },
 };

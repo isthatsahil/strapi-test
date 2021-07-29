@@ -18,7 +18,7 @@
     },
     {
       "method": "GET",
-      "path": "/authors/:id",
+      "path": "/authors/:slug",
       "handler": "authors.findOne",
       "config": {
         "policies": []
